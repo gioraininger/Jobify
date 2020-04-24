@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EbY-Ic-RN0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Jobs-->
+        <scene sceneID="uOd-nP-NQg">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ujR-ny-eL2" customClass="EmployeeMyJobs" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCv-0d-csm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A6n-E2-ygt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ujR-ny-eL2" id="UPr-Tb-2ch"/>
+                                    <outlet property="delegate" destination="ujR-ny-eL2" id="ANz-Uv-o67"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="YFQ-eF-mfB" firstAttribute="bottom" secondItem="A6n-E2-ygt" secondAttribute="bottom" id="2f1-7H-uSx"/>
+                            <constraint firstItem="YFQ-eF-mfB" firstAttribute="trailing" secondItem="A6n-E2-ygt" secondAttribute="trailing" id="8py-4t-cwm"/>
+                            <constraint firstItem="A6n-E2-ygt" firstAttribute="leading" secondItem="YFQ-eF-mfB" secondAttribute="leading" id="E3r-EI-71I"/>
+                            <constraint firstItem="A6n-E2-ygt" firstAttribute="top" secondItem="YFQ-eF-mfB" secondAttribute="top" id="E7l-Nv-cc6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YFQ-eF-mfB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Jobs" image="square.stack.3d.up.fill" catalog="system" id="A04-oc-PYC"/>
+                    <connections>
+                        <outlet property="tableView" destination="A6n-E2-ygt" id="D4a-zh-iO1"/>
+                        <segue destination="jE5-aH-XdP" kind="show" identifier="MyJobs" id="hz6-4l-oof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMl-zQ-oOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="842"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="UuC-qW-r6K">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gvh-eM-3kt" customClass="EmployeeHome" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YwF-if-Zr0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bjH-N6-00B">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gvh-eM-3kt" id="woH-Ro-GnH"/>
+                                    <outlet property="delegate" destination="gvh-eM-3kt" id="k4Z-3j-pwK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.092966482040000006" green="0.71043008569999999" blue="0.57620137930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9DJ-AE-L7a" firstAttribute="trailing" secondItem="bjH-N6-00B" secondAttribute="trailing" id="3H5-bK-Et0"/>
+                            <constraint firstItem="bjH-N6-00B" firstAttribute="top" secondItem="9DJ-AE-L7a" secondAttribute="top" id="Cnn-Dv-mj7"/>
+                            <constraint firstItem="9DJ-AE-L7a" firstAttribute="bottom" secondItem="bjH-N6-00B" secondAttribute="bottom" id="IW7-ho-EgE"/>
+                            <constraint firstItem="bjH-N6-00B" firstAttribute="leading" secondItem="9DJ-AE-L7a" secondAttribute="leading" id="pZu-O7-vXJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9DJ-AE-L7a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="9Lj-Fj-L0C"/>
+                    <connections>
+                        <outlet property="tableView" destination="bjH-N6-00B" id="wKA-fF-mar"/>
+                        <segue destination="8dt-1m-bQs" kind="show" identifier="BusinessDetails" id="oAp-DW-aao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BtX-4v-stZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1303" y="1446"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KWR-Ob-Es9">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AEn-Zg-le9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HiD-vt-dBC">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" id="au3-LO-Svi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Djj-TE-E5h" kind="popoverPresentation" popoverAnchorBarButtonItem="au3-LO-Svi" id="5p2-tT-aXx">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" opaque="NO" alpha="0.75" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oCS-18-YDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.46666666670000001" green="0.85490196080000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gvh-eM-3kt" kind="relationship" relationship="viewControllers" id="Tcc-CO-RGD"/>
+                        <segue destination="ujR-ny-eL2" kind="relationship" relationship="viewControllers" id="fps-Vf-dUx"/>
+                        <segue destination="HUV-QO-3wR" kind="relationship" relationship="viewControllers" id="AZ1-lr-89P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRv-mf-lG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="-500"/>
+        </scene>
+        <!--Employee Profile-->
+        <scene sceneID="SJT-Ov-jCg">
+            <objects>
+                <viewController id="Djj-TE-E5h" customClass="EmployeeProfile" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="81E-E4-AFX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-2t-YlC">
+                                <rect key="frame" x="20" y="37" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Profile"/>
+                                    <segment title="Finance"/>
+                                    <segment title="Help"/>
+                                </segments>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-dU-Bd9">
+                                <rect key="frame" x="107" y="95" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3Ci-JY-k9s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yhj-xa-KcY"/>
+                    <connections>
+                        <outlet property="profilePhoto" destination="aKD-dU-Bd9" id="SOt-5o-pXf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKt-Ee-YHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246.376811594203" y="-500.22321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PCg-iC-xMs">
+            <objects>
+                <navigationController storyboardIdentifier="EmployeeStart" modalPresentationStyle="fullScreen" id="EbY-Ic-RN0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="StK-wm-QT9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AEn-Zg-le9" kind="relationship" relationship="rootViewController" id="Zya-Xy-Ylm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7z-Hg-3od" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="-1202"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="E4W-j0-YIz">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HUV-QO-3wR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N7o-yH-ysr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.092966482040000006" green="0.71043008569999999" blue="0.57620137930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Si6-mC-DVy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" image="message.fill" catalog="system" id="MeX-B8-v1k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fM-J9-yEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="287"/>
+        </scene>
+        <!--BusinessDetails-->
+        <scene sceneID="mnB-uh-oZW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="8dt-1m-bQs" userLabel="BusinessDetails" customClass="BusinessDetails" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DAb-9P-QhL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M55-zw-tET">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="oz5-Od-zRp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Jobs" image="square.stack.3d.up.fill" catalog="system" id="qgr-99-3Jx"/>
+                    <navigationItem key="navigationItem" id="bdD-fD-pSq"/>
+                    <connections>
+                        <outlet property="imageView" destination="M55-zw-tET" id="Zqy-ZZ-fRQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsE-Dc-ZLw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2339" y="2160"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="wfl-tw-cBx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="jE5-aH-XdP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cXd-MZ-WNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.092966482040000006" green="0.71043008569999999" blue="0.57620137930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Pse-UN-e4P"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" image="message.fill" catalog="system" id="XOo-Xn-gLY"/>
+                    <navigationItem key="navigationItem" id="bmj-lQ-bkO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P68-wG-GVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="1293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
