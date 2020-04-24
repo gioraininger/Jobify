@@ -62,12 +62,12 @@ class EmployerApplicants: UIViewController,UITableViewDataSource, UITableViewDel
         
         
         let e = applicants[indexPath.row]
-        performSegue(withIdentifier: "", sender: e)
+        performSegue(withIdentifier: "MyAd", sender: e)
     }
     
     func callSegueFromCell(myData dataobject: AnyObject) {
       //try not to send self, just to avoid retain cycles(depends on how you handle the code on the next controller)
-        self.performSegue(withIdentifier: "", sender:dataobject )
+        self.performSegue(withIdentifier: "MyAd", sender:dataobject )
 
     }
 }

@@ -14,24 +14,37 @@ class EmployerRegister: UIViewController {
     @IBOutlet weak var emailTextView: UITextField!
     @IBOutlet weak var passwordTextView: UITextField!
     
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
-        
+        registerButton.layer.cornerRadius = 10
+        registerButton.clipsToBounds = true
+    }
+    
+ 
+    func displayMyAlertMessage(userMessage:String){
+
+        let myAlert = UIAlertController(title: "Error", message: userMessage, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Edit", style: UIAlertAction.Style.default, handler: nil)
+       myAlert.addAction(okAction)
+        self.present(myAlert, animated: true, completion: nil)
     }
     
     @IBAction func registerButtonPressed(_ sender: Any) {
         
-        guard let email = emailTextView.text else {
-            // You should check the email is correctly formatted with @ signs etc
-            // Use a UIAlert for this.
-                
+        
+        
+        guard let email = emailTextView.text, !email.isEmpty else {
+            displayMyAlertMessage (userMessage: "Your email field is empty")
             return
         }
         
-        guard let password = passwordTextView.text else {
+        
+        guard let password = passwordTextView.text, !password.isEmpty else {
             // You should check the password is correctly validated here e.g the password should contain a capital letter or should be longer than 8 characters
             // Use a UIAlert for this.
-            
+            displayMyAlertMessage (userMessage: "Your password field is empty")
+
             return
         }
         
