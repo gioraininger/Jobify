@@ -79,13 +79,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtX-4v-stZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1303" y="1446"/>
+            <point key="canvasLocation" x="-1304.3478260869567" y="1445.7589285714284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KWR-Ob-Es9">
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AEn-Zg-le9" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HiD-vt-dBC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="q3A-hX-H5O">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" id="au3-LO-Svi">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -128,19 +131,41 @@
                                     <segment title="Finance"/>
                                     <segment title="Help"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="Djj-TE-E5h" eventType="valueChanged" id="DVf-X8-X3k"/>
+                                </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-dU-Bd9">
-                                <rect key="frame" x="107" y="95" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-Rx-rzD">
+                                <rect key="frame" x="0.0" y="76" width="414" height="766"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Sdl-Uh-FoF" kind="embed" id="XLJ-2u-16A"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pn5-Av-prt">
+                                <rect key="frame" x="0.0" y="76" width="414" height="766"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="sJi-Pp-dfA" kind="embed" id="hxc-71-DlI"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-m1-5OE">
+                                <rect key="frame" x="0.0" y="76" width="414" height="766"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Rzl-bP-YOG" kind="embed" id="IUd-Mu-xkJ"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3Ci-JY-k9s"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yhj-xa-KcY"/>
                     <connections>
-                        <outlet property="profilePhoto" destination="aKD-dU-Bd9" id="SOt-5o-pXf"/>
+                        <outlet property="financeView" destination="Pn5-Av-prt" id="nDI-UY-EJA"/>
+                        <outlet property="helpView" destination="P5x-m1-5OE" id="IZD-Kk-hDE"/>
+                        <outlet property="profileView" destination="SpZ-Rx-rzD" id="Suf-wm-42L"/>
+                        <outlet property="segmentControl" destination="Hbb-2t-YlC" id="ad7-Ae-6je"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKt-Ee-YHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -221,6 +246,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P68-wG-GVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1109" y="1293"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="tSp-oH-gro">
+            <objects>
+                <viewController id="Sdl-Uh-FoF" userLabel="Profile" customClass="EmployeeProfilePage" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TfQ-rS-Fzl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhu-uR-aPs">
+                                <rect key="frame" x="25" y="117" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hij-NM-1zz">
+                                <rect key="frame" x="25" y="226" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hij-NM-1zz" firstAttribute="top" secondItem="Vhu-uR-aPs" secondAttribute="bottom" constant="88" id="0qf-n6-9Bq"/>
+                            <constraint firstItem="2Z9-4D-AW2" firstAttribute="trailing" secondItem="hij-NM-1zz" secondAttribute="trailing" constant="25" id="1c6-ix-Hv0"/>
+                            <constraint firstItem="hij-NM-1zz" firstAttribute="leading" secondItem="2Z9-4D-AW2" secondAttribute="leading" constant="25" id="2fU-Ul-OB7"/>
+                            <constraint firstItem="2Z9-4D-AW2" firstAttribute="trailing" secondItem="Vhu-uR-aPs" secondAttribute="trailing" constant="25" id="353-EP-uqg"/>
+                            <constraint firstItem="Vhu-uR-aPs" firstAttribute="top" secondItem="2Z9-4D-AW2" secondAttribute="top" constant="73" id="I02-yz-g0w"/>
+                            <constraint firstItem="Vhu-uR-aPs" firstAttribute="leading" secondItem="2Z9-4D-AW2" secondAttribute="leading" constant="25" id="xTs-4N-4wU"/>
+                            <constraint firstItem="2Z9-4D-AW2" firstAttribute="bottom" secondItem="hij-NM-1zz" secondAttribute="bottom" constant="519" id="yHc-Lc-Uhn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Z9-4D-AW2"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstName" destination="Vhu-uR-aPs" id="Lds-Wm-wwH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pl-XA-eFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882.608695652174" y="-1035.2678571428571"/>
+        </scene>
+        <!--Finance-->
+        <scene sceneID="Gvn-ir-dOD">
+            <objects>
+                <viewController id="sJi-Pp-dfA" userLabel="Finance" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ycz-RZ-NZa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0Mt-gI-qw5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpk-SZ-jCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882.608695652174" y="-456.02678571428567"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="Gl4-hd-PZu">
+            <objects>
+                <viewController id="Rzl-bP-YOG" userLabel="Help" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlW-d9-WkL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IW5-X9-aog"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yk-FB-0aL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882.608695652174" y="167.41071428571428"/>
         </scene>
     </scenes>
     <resources>

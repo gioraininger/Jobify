@@ -14,5 +14,12 @@ class ApplicantDetails: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var image: UIImageView!
 
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+    }
 }
+
+

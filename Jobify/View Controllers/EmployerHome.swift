@@ -16,8 +16,13 @@ class EmployerHome: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     var arrayOfApplicants:[EmployerHomeModel] = [EmployerHomeModel]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+     //   let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: self, action: nil)
+       // navigationItem.backBarButtonItem = backButton
+
         
         setupClearNavigationBarWithTitle()
         

@@ -160,26 +160,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pGX-Km-vjF">
-                                <rect key="frame" x="15" y="257.33333333333331" width="384" height="92"/>
+                                <rect key="frame" x="15" y="257.33333333333331" width="384" height="36"/>
                                 <subviews>
-                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-Ug-TJ1">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="36"/>
-                                        <color key="backgroundColor" red="0.46695203929443241" green="0.85551731603311965" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Login as Employer"/>
-                                        <connections>
-                                            <action selector="LoginButtonPressed:" destination="Pa4-Ca-iRk" eventType="touchUpInside" id="aKU-fO-u1j"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbY-VD-06o">
-                                        <rect key="frame" x="0.0" y="56" width="384" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="36"/>
                                         <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Login as Employee"/>
+                                        <state key="normal" title="Login "/>
                                         <connections>
-                                            <segue destination="ekt-xe-ZA8" kind="showDetail" id="TgN-8Q-Q06"/>
+                                            <action selector="LoginButtonPressed:" destination="Pa4-Ca-iRk" eventType="touchUpInside" id="pZ2-6Z-IXD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -208,7 +198,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find today's Job now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-U6-e4a">
                                         <rect key="frame" x="25" y="62.999999999999993" width="364" height="28.666666666666664"/>
-                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -260,7 +250,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="hl4-AX-pe9" id="KTo-D6-spQ"/>
                         <outlet property="passwordTextField" destination="JIv-JH-2gz" id="9vE-rj-G5l"/>
-                        <segue destination="PO0-Jz-6pf" kind="show" identifier="successSignin" id="SzR-v5-gQg"/>
+                        <segue destination="ekt-xe-ZA8" kind="show" identifier="employeeSegue" id="3vU-Jp-5Js"/>
+                        <segue destination="PO0-Jz-6pf" kind="show" identifier="employerSegue" id="gPr-Nn-XXw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCV-FV-VMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -285,7 +276,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3L-gn-tM0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="-319"/>
+            <point key="canvasLocation" x="2502" y="-212"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Si-Fo-I9f">
@@ -305,7 +296,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8ex-w6-HrA" kind="show" id="Jpg-90-qny"/>
+                                            <segue destination="8ex-w6-HrA" kind="presentation" id="BZf-6A-fzw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -330,7 +321,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ENe-BF-etq" kind="show" id="uqq-7P-Rk8"/>
+                                            <segue destination="ENe-BF-etq" kind="presentation" id="gZr-ou-fl3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -388,7 +379,7 @@
             <objects>
                 <viewController id="ENe-BF-etq" userLabel="EmployerRegister" customClass="EmployerRegister" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Byt-2M-WvD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="work" translatesAutoresizingMaskIntoConstraints="NO" id="c7g-aQ-xgh">
@@ -396,17 +387,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fm-b7-Pbl">
-                                <rect key="frame" x="15" y="308" width="384" height="34"/>
+                                <rect key="frame" x="15" y="220" width="384" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pvt-eF-VMI">
-                                <rect key="frame" x="15" y="396" width="384" height="34"/>
+                                <rect key="frame" x="15" y="308" width="384" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECO-rL-alf">
-                                <rect key="frame" x="15" y="480" width="384" height="30"/>
+                                <rect key="frame" x="15" y="392" width="384" height="30"/>
                                 <color key="backgroundColor" red="0.46666666666666667" green="0.85490196078431369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Register"/>
@@ -415,12 +406,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apv-LY-zZ7">
-                                <rect key="frame" x="15" y="352" width="384" height="34"/>
+                                <rect key="frame" x="15" y="264" width="384" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete your details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ly0-uP-YkL">
-                                <rect key="frame" x="15" y="211" width="384" height="35"/>
+                                <rect key="frame" x="15" y="123" width="384" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -449,6 +440,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="0uN-Fl-Bfn"/>
                     <connections>
+                        <outlet property="businessNameTextView" destination="0fm-b7-Pbl" id="BLK-rt-ZJE"/>
                         <outlet property="emailTextView" destination="apv-LY-zZ7" id="9Rz-PO-h2I"/>
                         <outlet property="passwordTextView" destination="Pvt-eF-VMI" id="6p8-Xp-51f"/>
                         <outlet property="registerButton" destination="ECO-rL-alf" id="L9x-tB-zNM"/>
@@ -474,7 +466,7 @@
             <objects>
                 <viewController id="8ex-w6-HrA" customClass="EmployeeRegister" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NrI-eg-eeY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="iLq-23-7NG">
@@ -482,7 +474,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="erQ-Ss-CQv">
-                                <rect key="frame" x="15" y="358" width="384" height="202"/>
+                                <rect key="frame" x="15" y="270" width="384" height="202"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yF4-Yu-1MN">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="34"/>
@@ -511,7 +503,9 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YM7-na-EFX">
                                         <rect key="frame" x="0.0" y="168" width="384" height="34"/>
                                         <attributedString key="attributedText"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password">
+                                            <passwordRules key="passwordRules" passwordRulesDescriptor="Use lowercase and upper case characters"/>
+                                        </textInputTraits>
                                         <connections>
                                             <action selector="passwordTextField:" destination="Rj4-b2-NZO" eventType="editingDidEnd" id="F3C-WK-4Wf"/>
                                         </connections>
@@ -519,16 +513,17 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MX-rU-j8V">
-                                <rect key="frame" x="15" y="610" width="384" height="30"/>
+                                <rect key="frame" x="15" y="522" width="384" height="30"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="Rj4-b2-NZO" eventType="touchUpInside" id="2Th-Qh-v9W"/>
+                                    <action selector="registerButtonPressed:" destination="8ex-w6-HrA" eventType="touchUpInside" id="pxz-Wk-5F2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete your details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avy-El-Kcr">
-                                <rect key="frame" x="15" y="261" width="384" height="35"/>
+                                <rect key="frame" x="15" y="173" width="384" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.85490196080000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -554,6 +549,8 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="0P3-Zr-wTr"/>
                     <connections>
                         <outlet property="emailTextField" destination="RhF-jI-ouR" id="dNR-vB-E6h"/>
+                        <outlet property="firstNameTextField" destination="yF4-Yu-1MN" id="IDy-fF-bTW"/>
+                        <outlet property="lastNameTextField" destination="nvK-Ab-L2q" id="pXJ-1E-xsZ"/>
                         <outlet property="passwordTextField" destination="YM7-na-EFX" id="bko-Et-6Go"/>
                         <outlet property="registerButton" destination="1MX-rU-j8V" id="Fvw-1I-5un"/>
                         <segue destination="z87-OB-dVj" kind="show" identifier="successEmployeeSignup" id="DPx-YE-R6Q"/>
