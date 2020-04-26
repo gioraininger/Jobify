@@ -18,8 +18,8 @@ class LoginPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+        hideKeyboardWhenTappedAround()
     }
     
     func displayMyAlertMessage(userMessage:String){
@@ -61,6 +61,7 @@ class LoginPage: UIViewController {
                   
                   // Here is how you can get the user id...
                   let userId = user.uid
+                AppSettings.saveUid(userId: userId)
                 self?.assignUserRole(userId: userId)
                   // it should be used to be the primary key in storing data in firebase database
                 var ref: DatabaseReference!

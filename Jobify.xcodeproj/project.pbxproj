@@ -26,7 +26,6 @@
 		F15BCE4424520005004F746A /* MyJobsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15BCE4224520005004F746A /* MyJobsCell.xib */; };
 		F15BCE46245201F4004F746A /* MyJobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BCE45245201F4004F746A /* MyJobsModel.swift */; };
 		F15BCE4C24520EF8004F746A /* EmployerRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BCE4B24520EF8004F746A /* EmployerRegister.swift */; };
-		F15BCE4E2452104F004F746A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F15BCE4D2452104F004F746A /* GoogleService-Info.plist */; };
 		F15BCE5124530A13004F746A /* EmployerApplicantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BCE4F24530A13004F746A /* EmployerApplicantsCell.swift */; };
 		F15BCE5224530A13004F746A /* EmployerApplicantsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15BCE5024530A13004F746A /* EmployerApplicantsCell.xib */; };
 		F15BCE5424530C1A004F746A /* EmployerApplicants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BCE5324530C1A004F746A /* EmployerApplicants.swift */; };
@@ -44,7 +43,11 @@
 		F197943E238DCCEB0015AB49 /* Employer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F197943D238DCCEB0015AB49 /* Employer.storyboard */; };
 		F19794402396F4EC0015AB49 /* EmployeeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F197943F2396F4EC0015AB49 /* EmployeeHome.swift */; };
 		F1C16AE92454FE81000C172E /* EmployerContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C16AE82454FE81000C172E /* EmployerContact.swift */; };
-		F1C16AEB2455AB98000C172E /* EmployerMessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C16AEA2455AB98000C172E /* EmployerMessagesModel.swift */; };
+		F1C16AEB2455AB98000C172E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C16AEA2455AB98000C172E /* Message.swift */; };
+		F1C16AED2455B037000C172E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1C16AEC2455B037000C172E /* GoogleService-Info.plist */; };
+		F1C16AF02455B557000C172E /* EmployerMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C16AEE2455B557000C172E /* EmployerMessagesCell.swift */; };
+		F1C16AF12455B557000C172E /* EmployerMessagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C16AEF2455B557000C172E /* EmployerMessagesCell.xib */; };
+		F1C16AF32455E8F1000C172E /* EmployeeMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C16AF22455E8F1000C172E /* EmployeeMessages.swift */; };
 		F1E9CF9F245063F700E80E96 /* EmployerHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9CF9D245063F700E80E96 /* EmployerHomeCell.swift */; };
 		F1E9CFA0245063F700E80E96 /* EmployerHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E9CF9E245063F700E80E96 /* EmployerHomeCell.xib */; };
 		F1E9CFA3245067F100E80E96 /* EmployerHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9CFA2245067F100E80E96 /* EmployerHomeModel.swift */; };
@@ -78,7 +81,6 @@
 		F15BCE4224520005004F746A /* MyJobsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJobsCell.xib; sourceTree = "<group>"; };
 		F15BCE45245201F4004F746A /* MyJobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJobsModel.swift; sourceTree = "<group>"; };
 		F15BCE4B24520EF8004F746A /* EmployerRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerRegister.swift; sourceTree = "<group>"; };
-		F15BCE4D2452104F004F746A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../.Trash/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F15BCE4F24530A13004F746A /* EmployerApplicantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerApplicantsCell.swift; sourceTree = "<group>"; };
 		F15BCE5024530A13004F746A /* EmployerApplicantsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployerApplicantsCell.xib; sourceTree = "<group>"; };
 		F15BCE5324530C1A004F746A /* EmployerApplicants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerApplicants.swift; sourceTree = "<group>"; };
@@ -96,7 +98,11 @@
 		F197943D238DCCEB0015AB49 /* Employer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employer.storyboard; sourceTree = "<group>"; };
 		F197943F2396F4EC0015AB49 /* EmployeeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHome.swift; sourceTree = "<group>"; };
 		F1C16AE82454FE81000C172E /* EmployerContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerContact.swift; sourceTree = "<group>"; };
-		F1C16AEA2455AB98000C172E /* EmployerMessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerMessagesModel.swift; sourceTree = "<group>"; };
+		F1C16AEA2455AB98000C172E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F1C16AEC2455B037000C172E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1C16AEE2455B557000C172E /* EmployerMessagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerMessagesCell.swift; sourceTree = "<group>"; };
+		F1C16AEF2455B557000C172E /* EmployerMessagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployerMessagesCell.xib; sourceTree = "<group>"; };
+		F1C16AF22455E8F1000C172E /* EmployeeMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMessages.swift; sourceTree = "<group>"; };
 		F1E9CF9D245063F700E80E96 /* EmployerHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHomeCell.swift; sourceTree = "<group>"; };
 		F1E9CF9E245063F700E80E96 /* EmployerHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployerHomeCell.xib; sourceTree = "<group>"; };
 		F1E9CFA2245067F100E80E96 /* EmployerHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHomeModel.swift; sourceTree = "<group>"; };
@@ -167,9 +173,9 @@
 				F13800C423436CB600519728 /* LaunchScreen.storyboard */,
 				F13800C723436CB600519728 /* Info.plist */,
 				F151F5F2239707E600646C6D /* AppManager.swift */,
+				F1C16AEC2455B037000C172E /* GoogleService-Info.plist */,
 				F11CE24723970D1600FFFFEB /* UIViewController+.swift */,
 				F15BCE3B2451EE6B004F746A /* CellSegueProtocol.swift */,
-				F15BCE4D2452104F004F746A /* GoogleService-Info.plist */,
 				F16059192454A9F300A6B8DF /* AppSettings.swift */,
 			);
 			path = Jobify;
@@ -194,6 +200,7 @@
 				F15BCE5724532E7C004F746A /* EmployeeRegister.swift */,
 				F15BCE5E2453907C004F746A /* EmployeeProfile.swift */,
 				F160591D2454BBEE00A6B8DF /* EmployeeProfilePage.swift */,
+				F1C16AF22455E8F1000C172E /* EmployeeMessages.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,6 +214,8 @@
 				F15BCE322451BEF3004F746A /* MyAdsCell.xib */,
 				F15BCE4F24530A13004F746A /* EmployerApplicantsCell.swift */,
 				F15BCE5024530A13004F746A /* EmployerApplicantsCell.xib */,
+				F1C16AEE2455B557000C172E /* EmployerMessagesCell.swift */,
+				F1C16AEF2455B557000C172E /* EmployerMessagesCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -243,7 +252,7 @@
 				F1E9CFA2245067F100E80E96 /* EmployerHomeModel.swift */,
 				F1F14264244F9CD500800048 /* ApplicantDetailsModel.swift */,
 				F15BCE352451C71A004F746A /* MyAdsModel.swift */,
-				F1C16AEA2455AB98000C172E /* EmployerMessagesModel.swift */,
+				F1C16AEA2455AB98000C172E /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,12 +365,13 @@
 			files = (
 				F197943E238DCCEB0015AB49 /* Employer.storyboard in Resources */,
 				F15BCE342451BEF3004F746A /* MyAdsCell.xib in Resources */,
-				F15BCE4E2452104F004F746A /* GoogleService-Info.plist in Resources */,
+				F1C16AF12455B557000C172E /* EmployerMessagesCell.xib in Resources */,
 				F15BCE5224530A13004F746A /* EmployerApplicantsCell.xib in Resources */,
 				F13800C623436CB600519728 /* LaunchScreen.storyboard in Resources */,
 				F15BCE4424520005004F746A /* MyJobsCell.xib in Resources */,
 				F13800C323436CB600519728 /* Assets.xcassets in Resources */,
 				F197943A238DC8C70015AB49 /* Employee.storyboard in Resources */,
+				F1C16AED2455B037000C172E /* GoogleService-Info.plist in Resources */,
 				F13800C123436CB500519728 /* Main.storyboard in Resources */,
 				F1E9CFA0245063F700E80E96 /* EmployerHomeCell.xib in Resources */,
 			);
@@ -438,6 +448,7 @@
 				F160591E2454BBEE00A6B8DF /* EmployeeProfilePage.swift in Sources */,
 				F11CE24A23970EB300FFFFEB /* JobifyPage.swift in Sources */,
 				F1C16AE92454FE81000C172E /* EmployerContact.swift in Sources */,
+				F1C16AF32455E8F1000C172E /* EmployeeMessages.swift in Sources */,
 				F13800BA23436CB500519728 /* AppDelegate.swift in Sources */,
 				F1E9CFA3245067F100E80E96 /* EmployerHomeModel.swift in Sources */,
 				F15BCE4C24520EF8004F746A /* EmployerRegister.swift in Sources */,
@@ -451,13 +462,14 @@
 				F15BCE5F2453907C004F746A /* EmployeeProfile.swift in Sources */,
 				F15BCE382451DB93004F746A /* EmployerMyAds.swift in Sources */,
 				F151F5F3239707E600646C6D /* AppManager.swift in Sources */,
-				F1C16AEB2455AB98000C172E /* EmployerMessagesModel.swift in Sources */,
+				F1C16AEB2455AB98000C172E /* Message.swift in Sources */,
 				F15BCE5A24538932004F746A /* EmployerProfile.swift in Sources */,
 				F15BCE4324520005004F746A /* MyJobsCell.swift in Sources */,
 				F15BCE5824532E7C004F746A /* EmployeeRegister.swift in Sources */,
 				F1E9CF9F245063F700E80E96 /* EmployerHomeCell.swift in Sources */,
 				F1E9CFA82450F06A00E80E96 /* ApplicantDetails.swift in Sources */,
 				F1F14263244F6C2000800048 /* DummyDataGenerator.swift in Sources */,
+				F1C16AF02455B557000C172E /* EmployerMessagesCell.swift in Sources */,
 				F15BCE5424530C1A004F746A /* EmployerApplicants.swift in Sources */,
 				F15BCE362451C71A004F746A /* MyAdsModel.swift in Sources */,
 				F196EE172416B80300A7F50C /* EmployerHome.swift in Sources */,

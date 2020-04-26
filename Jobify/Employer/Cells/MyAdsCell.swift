@@ -23,7 +23,21 @@ class MyAdsCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize(width: 5, height: 3)
+        self.layer.shadowRadius = 4
+        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.masksToBounds = false
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // Allow smoother scrolling with drop shadow implemented
+      cell.contentView.layer.masksToBounds = true
+      let radius = cell.contentView.layer.cornerRadius
+      cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: radius).cgPath
+        
     }
     
 

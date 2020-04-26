@@ -23,6 +23,12 @@ class EmployerRegister: UIViewController {
         registerButton.layer.cornerRadius = 10
         registerButton.clipsToBounds = true
         hideKeyboardWhenTappedAround()
+        
+        registerButton.layer.shadowOpacity = 1
+        registerButton.layer.shadowOffset = CGSize(width: 4, height: 2)
+        registerButton.layer.shadowRadius = 3
+        registerButton.layer.shadowColor = UIColor.darkGray.cgColor
+        registerButton.layer.masksToBounds = false
     }
     
  
@@ -66,6 +72,7 @@ class EmployerRegister: UIViewController {
                 
                 // Here is how you can get the user id...
                 let userId = user.uid
+                AppSettings.saveUid(userId: userId)
                 
                 // it should be used to be the primary key in storing data in firebase database
 //            var ref: DatabaseReference!

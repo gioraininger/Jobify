@@ -58,7 +58,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03o-H1-9vA">
                                 <rect key="frame" x="10" y="189" width="65" height="30"/>
-                                <color key="backgroundColor" red="0.46666666670000001" green="0.85490196080000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1AE-Nw-vlF"/>
                                     <constraint firstAttribute="width" constant="65" id="KJP-Vp-PEN"/>
@@ -71,7 +71,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJa-4b-Rkg">
                                 <rect key="frame" x="222" y="189" width="65" height="30"/>
-                                <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.1803921568627451" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GHR-iP-ZUk"/>
                                     <constraint firstAttribute="width" constant="65" id="vCQ-cv-2Wp"/>

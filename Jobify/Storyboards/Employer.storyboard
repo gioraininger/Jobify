@@ -25,7 +25,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46666666666666667" green="0.85490196078431369" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cMP-iG-MXF" firstAttribute="top" secondItem="gxT-Ih-VFT" secondAttribute="top" id="2S5-Pm-D6U"/>
                             <constraint firstItem="cMP-iG-MXF" firstAttribute="leading" secondItem="gxT-Ih-VFT" secondAttribute="leading" id="TJp-Rw-Cxt"/>
@@ -52,29 +52,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480-3V-3WF">
+                                <rect key="frame" x="25" y="85" width="364" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qcc-E2-Zv7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="619-jd-YvY" id="syK-3e-rTR"/>
                                     <outlet property="delegate" destination="619-jd-YvY" id="jKA-6B-b5U"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480-3V-3WF">
-                                <rect key="frame" x="25" y="88" width="364" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.46695203930000001" green="0.85551731600000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Qcc-E2-Zv7" firstAttribute="centerX" secondItem="ghm-0l-9Rj" secondAttribute="centerX" id="8xA-q9-6gu"/>
                             <constraint firstItem="480-3V-3WF" firstAttribute="leading" secondItem="oZ4-KY-FDd" secondAttribute="leading" constant="25" id="Aqt-Tc-w6U"/>
                             <constraint firstItem="Qcc-E2-Zv7" firstAttribute="bottom" secondItem="oZ4-KY-FDd" secondAttribute="bottom" id="Cf1-F9-7IV"/>
                             <constraint firstItem="oZ4-KY-FDd" firstAttribute="trailing" secondItem="480-3V-3WF" secondAttribute="trailing" constant="25" id="HBK-Kt-Rco"/>
                             <constraint firstItem="oZ4-KY-FDd" firstAttribute="bottom" secondItem="480-3V-3WF" secondAttribute="bottom" constant="704" id="IES-v9-Gu8"/>
-                            <constraint firstItem="Qcc-E2-Zv7" firstAttribute="top" secondItem="oZ4-KY-FDd" secondAttribute="top" id="N33-Um-LIR"/>
+                            <constraint firstItem="Qcc-E2-Zv7" firstAttribute="top" secondItem="oZ4-KY-FDd" secondAttribute="top" constant="20" id="N33-Um-LIR"/>
                             <constraint firstItem="Qcc-E2-Zv7" firstAttribute="leading" secondItem="oZ4-KY-FDd" secondAttribute="leading" id="RWc-k0-Lwv"/>
                             <constraint firstItem="Qcc-E2-Zv7" firstAttribute="trailing" secondItem="oZ4-KY-FDd" secondAttribute="trailing" id="lGF-Kj-eNO"/>
                             <constraint firstItem="480-3V-3WF" firstAttribute="centerX" secondItem="ghm-0l-9Rj" secondAttribute="centerX" id="pLc-HJ-Wov"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46695203930000001" green="0.85551731600000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="toL-XH-nQ9" firstAttribute="trailing" secondItem="mEA-5P-H9z" secondAttribute="trailing" id="dGH-ku-EQI"/>
                             <constraint firstItem="toL-XH-nQ9" firstAttribute="bottom" secondItem="mEA-5P-H9z" secondAttribute="bottom" id="jyU-Ii-Ohl"/>
@@ -134,6 +134,7 @@
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qEt-jH-OO2" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sY4-iv-FmS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Adh-21-eWS"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="VFI-Wd-CNu">
                             <color key="tintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
@@ -150,8 +151,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.26274509800000001" green="0.60392156860000001" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.91372549020000005" green="0.85098039219999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="AQX-7D-c0A" kind="relationship" relationship="viewControllers" id="jXO-8E-POZ"/>
@@ -260,6 +266,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="backbutton" backIndicatorTransitionMaskImage="backbutton" id="nmC-SJ-bDo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -358,7 +366,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.46695203930000001" green="0.85551731600000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="4k1-3J-0i4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Ads" image="tray.full.fill" catalog="system" id="6qa-XZ-3Ha"/>

@@ -17,8 +17,8 @@ class ApplicantDetails: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: self, action: nil)
-        navigationItem.backBarButtonItem = backButton
+        setupClearNavigationBarWithTitle()
+
     }
 }
 

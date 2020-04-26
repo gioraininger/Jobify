@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+struct Message {
+    let senderId : String?
+    let recipientId : String?
+    let messageBody : String?
+}

@@ -22,6 +22,12 @@ class EmployeeRegister: UIViewController {
         registerButton.layer.cornerRadius = 10
         registerButton.clipsToBounds = true
         hideKeyboardWhenTappedAround()
+        
+        registerButton.layer.shadowOpacity = 1
+        registerButton.layer.shadowOffset = CGSize(width: 4, height: 2)
+        registerButton.layer.shadowRadius = 3
+        registerButton.layer.shadowColor = UIColor.darkGray.cgColor
+        registerButton.layer.masksToBounds = false
     }
     
     func displayMyAlertMessage(userMessage:String){
@@ -66,6 +72,7 @@ class EmployeeRegister: UIViewController {
                 
                 // Here is how you can get the user id...
                 let userId = user.uid
+                AppSettings.saveUid(userId: userId)
                 let ref = Database.database().reference(fromURL:"https://jobify-ec052.firebaseio.com/")
                 let usersReference = ref.child("users").child(userId)
                 let values: [String: Any] = ["firstName": firstName, "lastName": lastName, "email": email, "isEmployer": false]

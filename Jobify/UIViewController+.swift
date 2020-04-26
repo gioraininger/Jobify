@@ -14,5 +14,8 @@ extension UIViewController {
         let navController = self.navigationController
         navController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navController?.navigationBar.shadowImage = UIImage()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    
     }
 }

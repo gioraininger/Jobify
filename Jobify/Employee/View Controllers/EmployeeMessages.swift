@@ -1,46 +1,44 @@
 //
-//  EmployerMessages.swift
+//  EmployeeMessages.swift
 //  Jobify
 //
-//  Created by Giovanni  Raininger  on 25/04/2020.
+//  Created by Giovanni  Raininger  on 26/04/2020.
 //  Copyright © 2020 Giovanni  Raininger . All rights reserved.
 //
 
 import UIKit
 
-class EmployerMessages: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EmployeeMessages: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
-    
-    let employerMessagesCellId = "EmployerMessagesCell"
+     let employeeMessagesCellId = "EmployerMessagesCell"
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var messageName: UILabel!
-    var contactName: String?
     
     var messages = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        messageName.text = AppSettings.getName()
         
-        
-        tableView.register(UINib.init(nibName: employerMessagesCellId, bundle: nil), forCellReuseIdentifier: employerMessagesCellId)
+        tableView.register(UINib.init(nibName: employeeMessagesCellId, bundle: nil), forCellReuseIdentifier: employeeMessagesCellId)
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.separatorColor = UIColor.clear
         
         let uid = AppSettings.getUid()
         messages = AppSettings.getMessages(userId: uid)
                 
         tableView.reloadData()
+        
+
     }
 
-    
+    // MARK: - Table view data source
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: employerMessagesCellId, for: indexPath) as! EmployerMessagesCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: employeeMessagesCellId, for: indexPath) as! EmployerMessagesCell
         cell.selectionStyle = .none
         let message = messages[indexPath.row]
         cell.senderId.text = message.senderId!
@@ -52,6 +50,5 @@ class EmployerMessages: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
-    
-    
+
 }
