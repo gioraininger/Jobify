@@ -10,7 +10,7 @@
         <!--Navigation Controller-->
         <scene sceneID="az9-k4-cRX">
             <objects>
-                <navigationController id="Wge-OV-KZY" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="Wge-OV-KZY" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="backbutton" backIndicatorTransitionMaskImage="backbutton" id="AHT-8y-GzC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-716" y="117"/>
         </scene>
-        <!--Jobify-->
+        <!--Jobify Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="JobifyPage" customModule="Jobify" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chris-liverani-9cd8qOgeNIY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="XjO-ht-S1o">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chris-liverani-9cd8qOgeNIY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="XjO-ht-S1o">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -45,13 +45,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="working whenever, wherever you want." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXY-gk-icd">
                                 <rect key="frame" x="25" y="375.33333333333331" width="364" height="22.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.1333333333" green="0.18039215689999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-6" translatesAutoresizingMaskIntoConstraints="NO" id="MHS-E9-npR">
-                                <rect key="frame" x="126" y="123" width="162" height="178"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MHS-E9-npR">
+                                <rect key="frame" x="67" y="123" width="280" height="178"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="IYR-ZI-j4t"/>
+                                    <constraint firstAttribute="width" constant="280" id="FUj-Jf-mhI"/>
                                     <constraint firstAttribute="height" constant="178" id="K0q-dH-wbU"/>
                                 </constraints>
                             </imageView>
@@ -76,16 +76,10 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-nD-qmc">
-                                <rect key="frame" x="25" y="311" width="364" height="27"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up and start earning money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-sj-gsK">
                                 <rect key="frame" x="25" y="348" width="364" height="22.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.1333333333" green="0.18039215689999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already a user?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-rK-x5o">
@@ -115,23 +109,20 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEa-nD-qmc" secondAttribute="trailing" constant="25" id="2Jw-IO-QH1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X6x-sj-gsK" secondAttribute="trailing" constant="25" id="2Q8-x1-aRS"/>
-                            <constraint firstItem="wEa-nD-qmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="59A-5L-0iQ"/>
                             <constraint firstItem="TmO-QE-Auq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="91T-Dr-PGI"/>
-                            <constraint firstItem="wEa-nD-qmc" firstAttribute="top" secondItem="MHS-E9-npR" secondAttribute="bottom" constant="10" id="EH8-Nc-jZM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TmO-QE-Auq" secondAttribute="trailing" constant="15" id="I1v-Yd-1GL"/>
                             <constraint firstItem="NXY-gk-icd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Khz-CU-9Os"/>
+                            <constraint firstItem="MHS-E9-npR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="MEX-UP-gMv"/>
                             <constraint firstItem="NXY-gk-icd" firstAttribute="top" secondItem="X6x-sj-gsK" secondAttribute="bottom" constant="5" id="QGj-HV-h75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHS-E9-npR" secondAttribute="trailing" constant="67" id="Rox-r0-JC4"/>
                             <constraint firstItem="X6x-sj-gsK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SQX-yr-O4s"/>
                             <constraint firstItem="NXY-gk-icd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TcI-ZZ-Ogn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NXY-gk-icd" secondAttribute="trailing" constant="25" id="ZR2-V4-YNn"/>
                             <constraint firstItem="fdg-91-Jz8" firstAttribute="top" secondItem="NXY-gk-icd" secondAttribute="bottom" constant="33" id="ZRy-Je-X08"/>
-                            <constraint firstItem="X6x-sj-gsK" firstAttribute="top" secondItem="wEa-nD-qmc" secondAttribute="bottom" constant="10" id="b6t-bJ-RAq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gff-rK-x5o" secondAttribute="trailing" constant="25" id="dF0-mu-Cf6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHS-E9-npR" secondAttribute="trailing" constant="126" id="dMK-iW-i7j"/>
-                            <constraint firstItem="wEa-nD-qmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ePW-D1-ngj"/>
                             <constraint firstItem="fdg-91-Jz8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="edk-pb-7dk"/>
+                            <constraint firstItem="X6x-sj-gsK" firstAttribute="top" secondItem="MHS-E9-npR" secondAttribute="bottom" constant="47" id="fPu-rv-fY4"/>
                             <constraint firstItem="TmO-QE-Auq" firstAttribute="top" secondItem="Gff-rK-x5o" secondAttribute="bottom" constant="10" id="hCC-Wx-clX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fdg-91-Jz8" secondAttribute="trailing" constant="15" id="jA6-G9-wJH"/>
                             <constraint firstItem="MHS-E9-npR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n7v-hV-8M0"/>
@@ -142,11 +133,10 @@
                             <constraint firstItem="fdg-91-Jz8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uq8-3n-KWk"/>
                             <constraint firstItem="Gff-rK-x5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xpS-Bs-pa7"/>
                             <constraint firstItem="TmO-QE-Auq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zP7-Bj-LWp"/>
-                            <constraint firstItem="MHS-E9-npR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="zuM-XB-SkZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Jobify" id="q7V-tX-Eye"/>
+                    <navigationItem key="navigationItem" id="q7V-tX-Eye"/>
                     <connections>
                         <outlet property="createAccountButton" destination="fdg-91-Jz8" id="jjg-C0-gUO"/>
                         <outlet property="jobImage" destination="MHS-E9-npR" id="Plb-ka-NtZ"/>
@@ -753,6 +743,6 @@
         <image name="background1" width="2090" height="2613"/>
         <image name="background2" width="1607" height="2410.5"/>
         <image name="chris-liverani-9cd8qOgeNIY-unsplash" width="3982" height="2579"/>
-        <image name="placeholder-6" width="256" height="256"/>
+        <image name="myLogo" width="512" height="512"/>
     </resources>
 </document>
