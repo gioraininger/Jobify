@@ -8,15 +8,18 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
-class EmployerRegister: UIViewController {
+class EmployerRegister: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     
     @IBOutlet weak var emailTextView: UITextField!
     @IBOutlet weak var passwordTextView: UITextField!
     @IBOutlet weak var businessNameTextView: UITextField!
-    
+    @IBOutlet weak var photoProfile: UIImageView!
     @IBOutlet weak var registerButton: UIButton!
+    
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         
@@ -29,6 +32,24 @@ class EmployerRegister: UIViewController {
         registerButton.layer.shadowRadius = 3
         registerButton.layer.shadowColor = UIColor.darkGray.cgColor
         registerButton.layer.masksToBounds = false
+        
+        setupPhotoProfile()
+    }
+    
+    func setupPhotoProfile(){
+        photoProfile.layer.cornerRadius = 15
+        photoProfile.clipsToBounds = true
+        photoProfile.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
+        photoProfile.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func presentPicker(){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
+        self.present(picker, animated: true, completion: nil)
     }
     
  
@@ -42,7 +63,14 @@ class EmployerRegister: UIViewController {
     
     @IBAction func registerButtonPressed(_ sender: Any) {
         
+        guard let imageSelected = self.image else{
+            print ("Profile photo is nil")
+            return
+        }
         
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+        }
         
         guard let email = emailTextView.text, !email.isEmpty else {
             displayMyAlertMessage (userMessage: "Your email field is empty")
@@ -79,10 +107,29 @@ class EmployerRegister: UIViewController {
 
                 let ref = Database.database().reference(fromURL:"https://jobify-ec052.firebaseio.com/")
                 let usersReference = ref.child("users").child(userId)
-                let values: [String : Any] = ["names": businessName, "email": email, "isEmployer": true ]
+                var values: [String : Any] = ["names": businessName, "email": email, "isEmployer": true, "profilePhotoUrl": ""]
                 
                 usersReference.updateChildValues(values)
-               // ref.child("users").setValue(values)
+                let storageRef = Storage.storage().reference(forURL: "gs://jobify-ec052.appspot.com")
+                let storageProfileRef = storageRef.child("users").child(userId)
+                
+                let metadata = StorageMetadata()
+                metadata.contentType = "image/png"
+                storageProfileRef.putData(imageData, metadata: metadata, completion:
+                    { (StorageMetaData, error) in
+                        if error != nil {
+                            print(error!.localizedDescription)
+                            return
+                        }
+                        
+                        storageProfileRef.downloadURL(completion: {(url, error) in
+                            if let metaImageUrl = url?.absoluteString {
+                                values["profilePhotoUrl"] = metaImageUrl
+                                usersReference.updateChildValues(values)
+                            }
+                        })
+                        
+                })
                                  
                 
             } else {
@@ -92,5 +139,20 @@ class EmployerRegister: UIViewController {
             }
         }
         
+    }
+}
+extension EmployerRegister {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imageSelected = info [UIImagePickerController.InfoKey.editedImage] as?
+            UIImage {
+            image = imageSelected
+            photoProfile.image = imageSelected
+        }
+        if let imageOriginal = info [UIImagePickerController.InfoKey.editedImage] as?
+            UIImage {
+            image = imageOriginal
+            photoProfile.image = imageOriginal
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
 }
