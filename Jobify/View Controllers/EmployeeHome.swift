@@ -60,6 +60,7 @@ class EmployeeHome: UIViewController, UITableViewDataSource, UITableViewDelegate
         cell.EmployerHomeImage.image = employer.image
         cell.EmployerHomeLocation.text = employer.location!
         cell.EmployerHomeSalary.text = employer.salary!
+        cell.delegate = self
         cell.Salary.text = "Pay"
         cell.Hire.setTitle("Apply", for: .normal)
         return cell
@@ -100,7 +101,7 @@ class EmployeeHome: UIViewController, UITableViewDataSource, UITableViewDelegate
     tableView.deselectRow(at: indexPath, animated: true)
         
         let e = employers[indexPath.row]
-        performSegue(withIdentifier: "BusinessDetails", sender: e)
+        performSegue(withIdentifier: "BusinessDetailsCell", sender: e)
     }
     
     func callSegueFromCell(myData dataobject: AnyObject) {

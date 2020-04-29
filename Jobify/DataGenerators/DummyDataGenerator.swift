@@ -69,9 +69,9 @@ class DummyDataGenerator {
         // Make some adds
         
         
-        ad.append(MyAdsModel(image: UIImage(named: "costa"), name: "costa", position: "something", date: "Something", shift: "waiter", pay: "6252", applicants: [EmployerHomeModel(name: "some name", desc: "some desc", image: UIImage(named: "chef1"), location: "someloc", salary: "6252"), EmployerHomeModel(name: "Waiter222", desc: "some guy", image: UIImage(named: "waiter1"), location: "loc", salary: "8763")]))
+        ad.append(MyAdsModel(image: UIImage(named: "costa"), name: "Costa Coffee", position: "Chef", date: "10/05/2020", shift: "7:00 till 17:00", pay: "£10.50ph", applicants: [EmployerHomeModel(name: "Josefine Brown", desc: "Chef", image: UIImage(named: "chef1"), location: "Richmond, London", salary: "£20.00ph"), EmployerHomeModel(name: "John Smith", desc: "Chef", image: UIImage(named: "waiter1"), location: "Wimbledon, London", salary: "£17.50ph")]))
         
-        ad.append(MyAdsModel(image: UIImage(named: "costa"), name: "costa", position: "something", date: "Something", shift: "waiter", pay: "6252", applicants: [EmployerHomeModel(name: "some name", desc: "some desc", image: UIImage(named: "chef1"), location: "someloc", salary: "6252")]))
+        ad.append(MyAdsModel(image: UIImage(named: "costa"), name: "Costa coffee", position: "Waiter", date: "23/05/2020", shift: "9:00 till 18:00", pay: "£11.00ph", applicants: [EmployerHomeModel(name:"Sam Dickinson", desc: "Waiter", image: UIImage(named: "waiter3")!,location: "Hackney, London", salary: "£11.50ph"), EmployerHomeModel(name:"Lara White", desc: "Waitress", image: UIImage(named: "waiter2")!,location: "Camden, London", salary: "£12.00ph"), EmployerHomeModel (name:"Michael Williams", desc: "Barman", image: UIImage(named: "barman1")!,location: "Surbiton, London", salary: "£9.50ph") ]))
         
         
         return ad

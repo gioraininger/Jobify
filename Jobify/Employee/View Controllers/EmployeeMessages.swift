@@ -25,6 +25,7 @@ class EmployeeMessages: UIViewController, UITableViewDelegate, UITableViewDataSo
         messages = AppSettings.getMessages(userId: uid)
                 
         tableView.reloadData()
+    
         
 
     }

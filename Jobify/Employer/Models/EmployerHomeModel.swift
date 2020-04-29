@@ -23,4 +23,5 @@ struct EmployerHomeModel {
     let image: UIImage?
     let location: String?
     let salary: String?
+    var employees: [EmployerHomeModel]?
 }

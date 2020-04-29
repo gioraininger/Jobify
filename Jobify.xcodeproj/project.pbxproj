@@ -10,6 +10,15 @@
 		066C8F3EB2DE93F248B905A7 /* Pods_Jobify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9008C3807BB0A536609B423 /* Pods_Jobify.framework */; };
 		F11CE24823970D1600FFFFEB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CE24723970D1600FFFFEB /* UIViewController+.swift */; };
 		F11CE24A23970EB300FFFFEB /* JobifyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CE24923970EB300FFFFEB /* JobifyPage.swift */; };
+		F1310F4E2459D63000770BCA /* BusinessDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F4C2459D63000770BCA /* BusinessDetailsCell.swift */; };
+		F1310F4F2459D63000770BCA /* BusinessDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1310F4D2459D63000770BCA /* BusinessDetailsCell.xib */; };
+		F1310F512459EDCA00770BCA /* EmployeeContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F502459EDCA00770BCA /* EmployeeContact.swift */; };
+		F1310F53245A0D9300770BCA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F52245A0D9300770BCA /* Account.swift */; };
+		F1310F55245A22AB00770BCA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F54245A22AB00770BCA /* UIView+.swift */; };
+		F1310F57245A30BA00770BCA /* EmployerHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F56245A30BA00770BCA /* EmployerHelp.swift */; };
+		F1310F59245A33A100770BCA /* EmployerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F58245A33A100770BCA /* EmployerSettings.swift */; };
+		F1310F5B245A424F00770BCA /* EmployeeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F5A245A424F00770BCA /* EmployeeHelp.swift */; };
+		F1310F5D245A42B400770BCA /* EmployeeFinance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310F5C245A42B400770BCA /* EmployeeFinance.swift */; };
 		F13800BA23436CB500519728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13800B923436CB500519728 /* AppDelegate.swift */; };
 		F13800BC23436CB500519728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13800BB23436CB500519728 /* SceneDelegate.swift */; };
 		F13800C123436CB500519728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13800BF23436CB500519728 /* Main.storyboard */; };
@@ -40,6 +49,8 @@
 		F160591E2454BBEE00A6B8DF /* EmployeeProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160591D2454BBEE00A6B8DF /* EmployeeProfilePage.swift */; };
 		F1606A1C2456F3FE0085C3AF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1606A1B2456F3FE0085C3AF /* SplashScreen.swift */; };
 		F1606A1E2456F5F20085C3AF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1606A1D2456F5F20085C3AF /* SplashScreen.storyboard */; };
+		F1606A212459B7830085C3AF /* ApplicantDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1606A1F2459B7830085C3AF /* ApplicantDetailsCell.swift */; };
+		F1606A222459B7830085C3AF /* ApplicantDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1606A202459B7830085C3AF /* ApplicantDetailsCell.xib */; };
 		F196EE172416B80300A7F50C /* EmployerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F196EE162416B80300A7F50C /* EmployerHome.swift */; };
 		F197943A238DC8C70015AB49 /* Employee.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1979439238DC8C70015AB49 /* Employee.storyboard */; };
 		F197943E238DCCEB0015AB49 /* Employer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F197943D238DCCEB0015AB49 /* Employer.storyboard */; };
@@ -65,6 +76,15 @@
 		E9008C3807BB0A536609B423 /* Pods_Jobify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jobify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CE24723970D1600FFFFEB /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		F11CE24923970EB300FFFFEB /* JobifyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobifyPage.swift; sourceTree = "<group>"; };
+		F1310F4C2459D63000770BCA /* BusinessDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailsCell.swift; sourceTree = "<group>"; };
+		F1310F4D2459D63000770BCA /* BusinessDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessDetailsCell.xib; sourceTree = "<group>"; };
+		F1310F502459EDCA00770BCA /* EmployeeContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeContact.swift; sourceTree = "<group>"; };
+		F1310F52245A0D9300770BCA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F1310F54245A22AB00770BCA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F1310F56245A30BA00770BCA /* EmployerHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHelp.swift; sourceTree = "<group>"; };
+		F1310F58245A33A100770BCA /* EmployerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerSettings.swift; sourceTree = "<group>"; };
+		F1310F5A245A424F00770BCA /* EmployeeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHelp.swift; sourceTree = "<group>"; };
+		F1310F5C245A42B400770BCA /* EmployeeFinance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFinance.swift; sourceTree = "<group>"; };
 		F13800B623436CB500519728 /* Jobify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13800B923436CB500519728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F13800BB23436CB500519728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +117,8 @@
 		F160591D2454BBEE00A6B8DF /* EmployeeProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfilePage.swift; sourceTree = "<group>"; };
 		F1606A1B2456F3FE0085C3AF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F1606A1D2456F5F20085C3AF /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		F1606A1F2459B7830085C3AF /* ApplicantDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantDetailsCell.swift; sourceTree = "<group>"; };
+		F1606A202459B7830085C3AF /* ApplicantDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplicantDetailsCell.xib; sourceTree = "<group>"; };
 		F196EE162416B80300A7F50C /* EmployerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHome.swift; sourceTree = "<group>"; };
 		F1979439238DC8C70015AB49 /* Employee.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employee.storyboard; sourceTree = "<group>"; };
 		F197943D238DCCEB0015AB49 /* Employer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Employer.storyboard; sourceTree = "<group>"; };
@@ -181,6 +203,7 @@
 				F11CE24723970D1600FFFFEB /* UIViewController+.swift */,
 				F15BCE3B2451EE6B004F746A /* CellSegueProtocol.swift */,
 				F16059192454A9F300A6B8DF /* AppSettings.swift */,
+				F1310F54245A22AB00770BCA /* UIView+.swift */,
 			);
 			path = Jobify;
 			sourceTree = "<group>";
@@ -188,6 +211,8 @@
 		F15BCE5B24539028004F746A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F1310F56245A30BA00770BCA /* EmployerHelp.swift */,
+				F1310F58245A33A100770BCA /* EmployerSettings.swift */,
 				F15BCE4B24520EF8004F746A /* EmployerRegister.swift */,
 				F15BCE5924538932004F746A /* EmployerProfile.swift */,
 				F160591224549A0E00A6B8DF /* EmployerProfilePage.swift */,
@@ -204,7 +229,10 @@
 				F15BCE5724532E7C004F746A /* EmployeeRegister.swift */,
 				F15BCE5E2453907C004F746A /* EmployeeProfile.swift */,
 				F160591D2454BBEE00A6B8DF /* EmployeeProfilePage.swift */,
+				F1310F5C245A42B400770BCA /* EmployeeFinance.swift */,
+				F1310F5A245A424F00770BCA /* EmployeeHelp.swift */,
 				F1C16AF22455E8F1000C172E /* EmployeeMessages.swift */,
+				F1310F502459EDCA00770BCA /* EmployeeContact.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -220,6 +248,8 @@
 				F15BCE5024530A13004F746A /* EmployerApplicantsCell.xib */,
 				F1C16AEE2455B557000C172E /* EmployerMessagesCell.swift */,
 				F1C16AEF2455B557000C172E /* EmployerMessagesCell.xib */,
+				F1606A1F2459B7830085C3AF /* ApplicantDetailsCell.swift */,
+				F1606A202459B7830085C3AF /* ApplicantDetailsCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -259,6 +289,7 @@
 				F1F14264244F9CD500800048 /* ApplicantDetailsModel.swift */,
 				F15BCE352451C71A004F746A /* MyAdsModel.swift */,
 				F1C16AEA2455AB98000C172E /* Message.swift */,
+				F1310F52245A0D9300770BCA /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +327,8 @@
 			children = (
 				F15BCE4124520005004F746A /* MyJobsCell.swift */,
 				F15BCE4224520005004F746A /* MyJobsCell.xib */,
+				F1310F4C2459D63000770BCA /* BusinessDetailsCell.swift */,
+				F1310F4D2459D63000770BCA /* BusinessDetailsCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -369,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1310F4F2459D63000770BCA /* BusinessDetailsCell.xib in Resources */,
 				F197943E238DCCEB0015AB49 /* Employer.storyboard in Resources */,
 				F1606A1E2456F5F20085C3AF /* SplashScreen.storyboard in Resources */,
 				F15BCE342451BEF3004F746A /* MyAdsCell.xib in Resources */,
@@ -377,6 +411,7 @@
 				F13800C623436CB600519728 /* LaunchScreen.storyboard in Resources */,
 				F15BCE4424520005004F746A /* MyJobsCell.xib in Resources */,
 				F13800C323436CB600519728 /* Assets.xcassets in Resources */,
+				F1606A222459B7830085C3AF /* ApplicantDetailsCell.xib in Resources */,
 				F197943A238DC8C70015AB49 /* Employee.storyboard in Resources */,
 				F1C16AED2455B037000C172E /* GoogleService-Info.plist in Resources */,
 				F13800C123436CB500519728 /* Main.storyboard in Resources */,
@@ -454,7 +489,9 @@
 				F15BCE332451BEF3004F746A /* MyAdsCell.swift in Sources */,
 				F160591E2454BBEE00A6B8DF /* EmployeeProfilePage.swift in Sources */,
 				F11CE24A23970EB300FFFFEB /* JobifyPage.swift in Sources */,
+				F1310F57245A30BA00770BCA /* EmployerHelp.swift in Sources */,
 				F1C16AE92454FE81000C172E /* EmployerContact.swift in Sources */,
+				F1310F5D245A42B400770BCA /* EmployeeFinance.swift in Sources */,
 				F1C16AF32455E8F1000C172E /* EmployeeMessages.swift in Sources */,
 				F13800BA23436CB500519728 /* AppDelegate.swift in Sources */,
 				F1E9CFA3245067F100E80E96 /* EmployerHomeModel.swift in Sources */,
@@ -463,6 +500,8 @@
 				F15BCE562453270E004F746A /* LoginPage.swift in Sources */,
 				F160591A2454A9F300A6B8DF /* AppSettings.swift in Sources */,
 				F1E9CFB1245106DC00E80E96 /* BusinessDetails.swift in Sources */,
+				F1310F5B245A424F00770BCA /* EmployeeHelp.swift in Sources */,
+				F1310F53245A0D9300770BCA /* Account.swift in Sources */,
 				F15BCE3E2451FD94004F746A /* EmployeeMyJobs.swift in Sources */,
 				F15BCE46245201F4004F746A /* MyJobsModel.swift in Sources */,
 				F1F14265244F9CD500800048 /* ApplicantDetailsModel.swift in Sources */,
@@ -470,6 +509,8 @@
 				F15BCE382451DB93004F746A /* EmployerMyAds.swift in Sources */,
 				F151F5F3239707E600646C6D /* AppManager.swift in Sources */,
 				F1C16AEB2455AB98000C172E /* Message.swift in Sources */,
+				F1310F512459EDCA00770BCA /* EmployeeContact.swift in Sources */,
+				F1310F59245A33A100770BCA /* EmployerSettings.swift in Sources */,
 				F15BCE5A24538932004F746A /* EmployerProfile.swift in Sources */,
 				F15BCE4324520005004F746A /* MyJobsCell.swift in Sources */,
 				F15BCE5824532E7C004F746A /* EmployeeRegister.swift in Sources */,
@@ -478,7 +519,10 @@
 				F1E9CFA82450F06A00E80E96 /* ApplicantDetails.swift in Sources */,
 				F1F14263244F6C2000800048 /* DummyDataGenerator.swift in Sources */,
 				F1C16AF02455B557000C172E /* EmployerMessagesCell.swift in Sources */,
+				F1310F55245A22AB00770BCA /* UIView+.swift in Sources */,
 				F15BCE5424530C1A004F746A /* EmployerApplicants.swift in Sources */,
+				F1310F4E2459D63000770BCA /* BusinessDetailsCell.swift in Sources */,
+				F1606A212459B7830085C3AF /* ApplicantDetailsCell.swift in Sources */,
 				F15BCE362451C71A004F746A /* MyAdsModel.swift in Sources */,
 				F196EE172416B80300A7F50C /* EmployerHome.swift in Sources */,
 				F19794402396F4EC0015AB49 /* EmployeeHome.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
 
 class EmployerProfile: UIViewController, UITableViewDelegate {
     @IBOutlet weak var segmentControl: UISegmentedControl!

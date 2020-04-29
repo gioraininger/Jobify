@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 
 class EmployerProfilePage: UIViewController, UITableViewDelegate {
+    var accounts = [Account]()
 
+    @IBOutlet weak var curvedView: UIView!
+    @IBOutlet weak var photoProfile: UIImageView!
     @IBOutlet weak var businessName: UILabel!
     var employerName: String?
     
@@ -20,21 +24,42 @@ class EmployerProfilePage: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
 
         businessName.text = AppSettings.getName()
+        getImage()
+        curvedView.addBottomRoundedEdge(desiredCurve: 3)
+     //   let account = Account(photoUrlString: "TEEEEEEEST")
+     //   print(account.profilePhotoUrl)
     }
     
-
-/*
-    init?(snapshot: DataSnapshot) {
-
-    guard let employerName = snapshot.childSnapshot(forPath: "names").value as? String,
-        else do { return nil }
-
-    self.employerName = employerName
-}
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-}
-  */
+    
+    func getImage(){
+        let ref = Database.database().reference()
+
+        ref.child("users").child(AppSettings.getUid()).observeSingleEvent(of: .value, with: { (snapshot) in
+              
+            let value = snapshot.value as? NSDictionary
+            
+            guard let imageURL = value?["profilePhotoUrl"] as? String else {
+                return
+            }
+            
+            guard let url = URL(string: imageURL) else {
+                return
+            }
+
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.photoProfile.image = image
+                    }
+                }
+            }
+
+          }) { (error) in
+            // FIXME: Alert the user image retrieval has been unsuccessful
+            print(error.localizedDescription)
+        }
+    }
+    
 }
 
