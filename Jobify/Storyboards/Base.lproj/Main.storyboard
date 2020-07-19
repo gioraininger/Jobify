@@ -301,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCV-FV-VMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="713"/>
+            <point key="canvasLocation" x="1164" y="566"/>
         </scene>
         <!--EmployerStart-->
         <scene sceneID="jol-eD-dne">
@@ -311,7 +311,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Czs-eN-eKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="848"/>
+            <point key="canvasLocation" x="2150" y="695"/>
         </scene>
         <!--EmployeeStart-->
         <scene sceneID="KF5-lI-qKw">
@@ -321,7 +321,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3L-gn-tM0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="566"/>
+            <point key="canvasLocation" x="2151" y="450"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Si-Fo-I9f">
@@ -431,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtB-Ox-hzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="-400"/>
+            <point key="canvasLocation" x="1164" y="-292"/>
         </scene>
         <!--EmployerRegister-->
         <scene sceneID="zQq-EK-2Op">
@@ -751,7 +751,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAx-4A-dcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Rj4-b2-NZO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="-675"/>
+            <point key="canvasLocation" x="2190" y="-601"/>
         </scene>
         <!--EmployeeStart-->
         <scene sceneID="edD-fk-hap">
@@ -761,7 +761,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dia-hc-Wm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2801" y="-675"/>
+            <point key="canvasLocation" x="2802" y="-601"/>
         </scene>
     </scenes>
     <resources>

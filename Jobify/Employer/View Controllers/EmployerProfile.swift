@@ -16,15 +16,12 @@ class EmployerProfile: UIViewController, UITableViewDelegate {
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var settingsView: UIView!
     @IBOutlet weak var helpView: UIView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         settingsView.isHidden = true
         helpView.isHidden = true
     }
-    
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
         switch segmentControl.selectedSegmentIndex {
         case 0:

@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oil-XB-7Yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="490"/>
+            <point key="canvasLocation" x="-197" y="490"/>
         </scene>
         <!--Home-->
         <scene sceneID="mfX-gW-3MK">
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKo-w1-88i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3949.275362318841" y="489.50892857142856"/>
+            <point key="canvasLocation" x="-3828" y="490"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OEm-hC-Rgw">
@@ -211,7 +211,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YmF-PR-74z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1565" y="-231"/>
+            <point key="canvasLocation" x="-1565" y="-260"/>
         </scene>
         <!--EmployerProfile-->
         <scene sceneID="BQW-sw-aUL">
@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCP-sf-zdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55.072463768115945" y="-260.49107142857144"/>
+            <point key="canvasLocation" x="-197" y="-260"/>
         </scene>
         <!--Contact-->
         <scene sceneID="gAx-OT-eP4">
@@ -406,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIo-FE-nQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4942.0289855072469" y="1242.8571428571429"/>
+            <point key="canvasLocation" x="-4580" y="1223"/>
         </scene>
         <!--Employer Applicant List-->
         <scene sceneID="XIW-8I-zlZ">
@@ -513,8 +513,8 @@
                                     <constraint firstAttribute="height" constant="343" id="H5Z-RI-7xw"/>
                                     <constraint firstAttribute="width" constant="374" id="uab-DY-IQ8"/>
                                 </constraints>
-                                <mutableString key="text">In 1998, the company employed 1,400 people, of whom 19% were from the UK and 60% were from other European Union countries, mainly in Eastern Europe. Pret A Manger employs 1 in every 14 applicants. Applicants go on a one-day experience day at a shop and their success is determined by votes from the staff members. Many managers and senior executives have come from within the company.
-The organisational structure of Pret A Manger is divided between its stores and the main offices. 
+                                <mutableString key="text">In 1998, the company employed 1,400 people, of whom 19% were from the UK and 60% were from other European Union countries, mainly in Eastern Europe. Costa Coffee employs 1 in every 14 applicants. Applicants go on a one-day experience day at a shop and their success is determined by votes from the staff members. Many managers and senior executives have come from within the company.
+The organisational structure of Costa Coffee is divided between its stores and the main offices. 
 
 The London head office is the hub for the UK stores, while the office in New York City is the hub for the American stores. Each store contains levels of positions that range from team member to general manager of the store. Above the in-store manager is the operations manager who is in charge of a group of roughly 10 stores, and above that are more senior management positions based out of the offices that are tasked with coordinating a region and maintaining communication with the company's CEO in London. All office employees are paired with a "buddy shop" where they work at least two days a year</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -591,7 +591,7 @@ The London head office is the hub for the UK stores, while the office in New Yor
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJu-b4-CYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.9710144927537" y="-640.51339285714278"/>
+            <point key="canvasLocation" x="832" y="-1015"/>
         </scene>
         <!--Employer Settings-->
         <scene sceneID="ted-MB-W0k">
@@ -634,7 +634,7 @@ The London head office is the hub for the UK stores, while the office in New Yor
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIz-gx-VWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.9710144927537" y="68.638392857142847"/>
+            <point key="canvasLocation" x="832" y="-299"/>
         </scene>
         <!--Employer Help-->
         <scene sceneID="Akk-bi-eUg">
@@ -717,7 +717,7 @@ The London head office is the hub for the UK stores, while the office in New Yor
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RU-z4-4JD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.9710144927537" y="775.78125"/>
+            <point key="canvasLocation" x="832" y="451"/>
         </scene>
     </scenes>
     <resources>

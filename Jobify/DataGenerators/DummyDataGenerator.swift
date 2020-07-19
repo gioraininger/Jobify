@@ -9,16 +9,6 @@
 import UIKit
 
 class DummyDataGenerator {
-   
-//    func getJobData() -> [Job] {
-//        var jobs = [Job]()
-//       
-//        jobs.append(Job(jobName: "Chef", jobSalary: 20000, jobImage: UIImage(named: "chefImage")!))
-//        jobs.append(Job(jobName: "waiter", jobSalary: 18000, jobImage: UIImage(named: "WaiterImage")!))
-//        
-//       
-//       return jobs
-//    }
     
     func getEmployeeData() -> [EmployerHomeModel] {
         var employee: [EmployerHomeModel] = [EmployerHomeModel]()

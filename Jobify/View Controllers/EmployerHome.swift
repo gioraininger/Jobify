@@ -24,36 +24,17 @@ class EmployerHome: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     //   let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: self, action: nil)
-       // navigationItem.backBarButtonItem = backButton
-
-          searchBar.delegate = self
-         // searchBar.backgroundColor = UIColor.lightGray
-          //searchBar.isTranslucent = true
-         // searchBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        
-      
-        
-       
-
-        
+        searchBar.delegate = self
         hideKeyboardWhenTappedAround()
-        
         setupClearNavigationBarWithTitle()
-        
         // register cell
         tableView.register(UINib.init(nibName: employerHomeCellId, bundle: nil), forCellReuseIdentifier: employerHomeCellId)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorColor = UIColor.clear
-        
         employees = DummyDataGenerator().getEmployeeData()
-                
         tableView.reloadData()
-            
     }
     
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if filteredResults.isEmpty {
             let cell = tableView.dequeueReusableCell(withIdentifier: employerHomeCellId, for: indexPath) as! EmployerHomeCell
@@ -109,7 +90,6 @@ class EmployerHome: UIViewController, UITableViewDataSource, UITableViewDelegate
         self.performSegue(withIdentifier: "contact", sender:dataobject )
 
     }
-    
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
